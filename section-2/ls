@@ -1,0 +1,16 @@
+max@ws01:~$ ls -l
+итого 52
+drwxrwxr-x  5 max max 4096 июл 28 23:56  2
+drwxr-xr-x  4 max max 4096 июл 31 00:16  Desktop
+drwxr-xr-x  3 max max 4096 июл 30 19:41  Downloads
+drwxr-xr-x 12 max max 4096 июл 28 21:53  linux-vm
+drwx------  7 max max 4096 июл 31 00:17  snap
+drwxr-xr-x  2 max max 4096 июл 30 20:29  Видео
+drwxr-xr-x  2 max max 4096 июл 30 20:29  Документы
+drwxr-xr-x  2 max max 4096 июл 30 20:29  Загрузки
+drwxr-xr-x  2 max max 4096 июл 30 20:29  Изображения
+drwxr-xr-x  2 max max 4096 июл 30 20:29  Музыка
+drwxr-xr-x  2 max max 4096 июл 30 20:29  Общедоступные
+drwxr-xr-x  2 max max 4096 июл 30 20:29 'Рабочий стол'
+drwxr-xr-x  2 max max 4096 июл 30 20:29  Шаблоны
+max@ws01:~$ 
