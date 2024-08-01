@@ -14,4 +14,5 @@ ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 172.20.1.1 dev-gateway
-max@ws01:~/linux-vm$ 
+max@ws01:~/linux-vm$
+
