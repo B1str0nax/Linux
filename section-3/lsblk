@@ -1,0 +1,245 @@
+max@ws01:~$ lsblk 
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0    7:0    0     4K  1 loop /snap/bare/5
+loop1    7:1    0  55,7M  1 loop /snap/core18/2829
+loop2    7:2    0  61,9M  1 loop /snap/core20/1405
+loop3    7:3    0  74,2M  1 loop /snap/core22/1380
+loop4    7:4    0  63,9M  1 loop /snap/core20/2318
+loop5    7:5    0 268,4M  1 loop /snap/firefox/4650
+loop6    7:6    0 231,1M  1 loop /snap/gitkraken/243
+loop7    7:7    0 349,7M  1 loop /snap/gnome-3-38-2004/143
+loop8    7:8    0 248,8M  1 loop /snap/gnome-3-38-2004/99
+loop9    7:9    0  81,3M  1 loop /snap/gtk-common-themes/1534
+loop10   7:10   0  12,9M  1 loop /snap/snap-store/1113
+loop11   7:11   0  45,9M  1 loop /snap/snap-store/575
+loop12   7:12   0 505,1M  1 loop /snap/gnome-42-2204/176
+loop13   7:13   0  38,8M  1 loop /snap/snapd/21759
+loop14   7:14   0 310,3M  1 loop /snap/code/164
+loop15   7:15   0   284K  1 loop /snap/snapd-desktop-integration/10
+loop16   7:16   0  91,7M  1 loop /snap/gtk-common-themes/1535
+loop17   7:17   0   476K  1 loop /snap/snapd-desktop-integration/157
+sda      8:0    0   500G  0 disk 
+├─sda1   8:1    0 220,6G  0 part /var/snap/firefox/common/host-hunspell
+│                                /
+├─sda2   8:2    0   286M  0 part /boot
+├─sda3   8:3    0    95M  0 part 
+├─sda4   8:4    0   8,9G  0 part [SWAP]
+└─sda5   8:5    0 270,1G  0 part /home
+sr0     11:0    1  1024M  0 rom  
+max@ws01:~$ ls -l /dev
+итого 0
+crw-r--r--  1 root root     10, 235 авг  1 12:16 autofs
+drwxr-xr-x  2 root root         560 авг  1 12:16 block
+drwxr-xr-x  2 root root          80 авг  1 12:15 bsg
+crw-------  1 root root     10, 234 авг  1 12:16 btrfs-control
+drwxr-xr-x  3 root root          60 авг  1 12:16 bus
+lrwxrwxrwx  1 root root           3 авг  1 12:16 cdrom -> sr0
+drwxr-xr-x  2 root root        3760 авг  1 12:16 char
+crw--w----  1 root tty       5,   1 авг  1 12:16 console
+lrwxrwxrwx  1 root root          11 авг  1 12:15 core -> /proc/kcore
+drwxr-xr-x  6 root root         120 авг  1 12:16 cpu
+crw-------  1 root root     10, 123 авг  1 12:16 cpu_dma_latency
+crw-------  1 root root     10, 203 авг  1 12:16 cuse
+drwxr-xr-x  6 root root         120 авг  1 12:15 disk
+drwxr-xr-x  2 root root          60 авг  1 12:16 dma_heap
+drwxr-xr-x  3 root root         100 авг  1 12:16 dri
+crw-------  1 root root     10, 125 авг  1 12:16 ecryptfs
+crw-rw----  1 root video    29,   0 авг  1 12:16 fb0
+lrwxrwxrwx  1 root root          13 авг  1 12:15 fd -> /proc/self/fd
+crw-rw-rw-  1 root root      1,   7 авг  1 12:16 full
+crw-rw-rw-  1 root root     10, 229 авг  1 12:16 fuse
+crw-------  1 root root    241,   0 авг  1 12:16 hidraw0
+crw-------  1 root root     10, 228 авг  1 12:16 hpet
+drwxr-xr-x  2 root root           0 авг  1 12:16 hugepages
+crw-------  1 root root     10, 183 авг  1 12:16 hwrng
+crw-------  1 root root     89,   0 авг  1 12:16 i2c-0
+lrwxrwxrwx  1 root root          12 авг  1 12:16 initctl -> /run/initctl
+drwxr-xr-x  4 root root         340 авг  1 12:16 input
+crw-r--r--  1 root root      1,  11 авг  1 12:16 kmsg
+lrwxrwxrwx  1 root root          28 авг  1 12:16 log -> /run/systemd/journal/dev-log
+brw-rw----  1 root disk      7,   0 авг  1 12:16 loop0
+brw-rw----  1 root disk      7,   1 авг  1 12:16 loop1
+brw-rw----  1 root disk      7,  10 авг  1 12:16 loop10
+brw-rw----  1 root disk      7,  11 авг  1 12:16 loop11
+brw-rw----  1 root disk      7,  12 авг  1 12:16 loop12
+brw-rw----  1 root disk      7,  13 авг  1 12:16 loop13
+brw-rw----  1 root disk      7,  14 авг  1 12:16 loop14
+brw-rw----  1 root disk      7,  15 авг  1 12:16 loop15
+brw-rw----  1 root disk      7,  16 авг  1 12:16 loop16
+brw-rw----  1 root disk      7,  17 авг  1 12:16 loop17
+brw-rw----  1 root disk      7,  18 авг  1 12:16 loop18
+brw-rw----  1 root disk      7,   2 авг  1 12:16 loop2
+brw-rw----  1 root disk      7,   3 авг  1 12:16 loop3
+brw-rw----  1 root disk      7,   4 авг  1 12:16 loop4
+brw-rw----  1 root disk      7,   5 авг  1 12:16 loop5
+brw-rw----  1 root disk      7,   6 авг  1 12:16 loop6
+brw-rw----  1 root disk      7,   7 авг  1 12:16 loop7
+brw-rw----  1 root disk      7,   8 авг  1 12:16 loop8
+brw-rw----  1 root disk      7,   9 авг  1 12:16 loop9
+crw-rw----  1 root disk     10, 237 авг  1 12:16 loop-control
+drwxr-xr-x  2 root root          60 авг  1 12:15 mapper
+crw-------  1 root root     10, 227 авг  1 12:16 mcelog
+crw-r-----  1 root kmem      1,   1 авг  1 12:16 mem
+drwxrwxrwt  2 root root          40 авг  1 12:16 mqueue
+drwxr-xr-x  2 root root          60 авг  1 12:16 net
+crw-rw-rw-  1 root root      1,   3 авг  1 12:16 null
+crw-------  1 root root     10, 144 авг  1 12:16 nvram
+crw-r-----  1 root kmem      1,   4 авг  1 12:16 port
+crw-------  1 root root    108,   0 авг  1 12:16 ppp
+crw-------  1 root root     10,   1 авг  1 12:16 psaux
+crw-rw-rw-  1 root tty       5,   2 авг  1 14:32 ptmx
+drwxr-xr-x  2 root root           0 авг  1 12:15 pts
+crw-rw-rw-  1 root root      1,   8 авг  1 12:16 random
+crw-rw-r--+ 1 root root     10, 242 авг  1 12:16 rfkill
+lrwxrwxrwx  1 root root           4 авг  1 12:16 rtc -> rtc0
+crw-------  1 root root    248,   0 авг  1 12:16 rtc0
+brw-rw----  1 root disk      8,   0 авг  1 12:16 sda
+brw-rw----  1 root disk      8,   1 авг  1 12:16 sda1
+brw-rw----  1 root disk      8,   2 авг  1 12:16 sda2
+brw-rw----  1 root disk      8,   3 авг  1 12:16 sda3
+brw-rw----  1 root disk      8,   4 авг  1 12:16 sda4
+brw-rw----  1 root disk      8,   5 авг  1 12:16 sda5
+crw-rw----+ 1 root cdrom    21,   0 авг  1 12:16 sg0
+crw-rw----  1 root disk     21,   1 авг  1 12:16 sg1
+drwxrwxrwt  2 root root          40 авг  1 14:31 shm
+crw-------  1 root root     10, 231 авг  1 12:16 snapshot
+drwxr-xr-x  3 root root         180 авг  1 12:16 snd
+brw-rw----+ 1 root cdrom    11,   0 авг  1 12:16 sr0
+lrwxrwxrwx  1 root root          15 авг  1 12:15 stderr -> /proc/self/fd/2
+lrwxrwxrwx  1 root root          15 авг  1 12:15 stdin -> /proc/self/fd/0
+lrwxrwxrwx  1 root root          15 авг  1 12:15 stdout -> /proc/self/fd/1
+crw-rw-rw-  1 root tty       5,   0 авг  1 14:09 tty
+crw--w----  1 root tty       4,   0 авг  1 12:16 tty0
+crw--w----  1 root tty       4,   1 авг  1 12:16 tty1
+crw--w----  1 root tty       4,  10 авг  1 12:16 tty10
+crw--w----  1 root tty       4,  11 авг  1 12:16 tty11
+crw--w----  1 root tty       4,  12 авг  1 12:16 tty12
+crw--w----  1 root tty       4,  13 авг  1 12:16 tty13
+crw--w----  1 root tty       4,  14 авг  1 12:16 tty14
+crw--w----  1 root tty       4,  15 авг  1 12:16 tty15
+crw--w----  1 root tty       4,  16 авг  1 12:16 tty16
+crw--w----  1 root tty       4,  17 авг  1 12:16 tty17
+crw--w----  1 root tty       4,  18 авг  1 12:16 tty18
+crw--w----  1 root tty       4,  19 авг  1 12:16 tty19
+crw--w----  1 max  tty       4,   2 авг  1 12:16 tty2
+crw--w----  1 root tty       4,  20 авг  1 12:16 tty20
+crw--w----  1 root tty       4,  21 авг  1 12:16 tty21
+crw--w----  1 root tty       4,  22 авг  1 12:16 tty22
+crw--w----  1 root tty       4,  23 авг  1 12:16 tty23
+crw--w----  1 root tty       4,  24 авг  1 12:16 tty24
+crw--w----  1 root tty       4,  25 авг  1 12:16 tty25
+crw--w----  1 root tty       4,  26 авг  1 12:16 tty26
+crw--w----  1 root tty       4,  27 авг  1 12:16 tty27
+crw--w----  1 root tty       4,  28 авг  1 12:16 tty28
+crw--w----  1 root tty       4,  29 авг  1 12:16 tty29
+crw--w----  1 root tty       4,   3 авг  1 12:16 tty3
+crw--w----  1 root tty       4,  30 авг  1 12:16 tty30
+crw--w----  1 root tty       4,  31 авг  1 12:16 tty31
+crw--w----  1 root tty       4,  32 авг  1 12:16 tty32
+crw--w----  1 root tty       4,  33 авг  1 12:16 tty33
+crw--w----  1 root tty       4,  34 авг  1 12:16 tty34
+crw--w----  1 root tty       4,  35 авг  1 12:16 tty35
+crw--w----  1 root tty       4,  36 авг  1 12:16 tty36
+crw--w----  1 root tty       4,  37 авг  1 12:16 tty37
+crw--w----  1 root tty       4,  38 авг  1 12:16 tty38
+crw--w----  1 root tty       4,  39 авг  1 12:16 tty39
+crw--w----  1 root tty       4,   4 авг  1 12:16 tty4
+crw--w----  1 root tty       4,  40 авг  1 12:16 tty40
+crw--w----  1 root tty       4,  41 авг  1 12:16 tty41
+crw--w----  1 root tty       4,  42 авг  1 12:16 tty42
+crw--w----  1 root tty       4,  43 авг  1 12:16 tty43
+crw--w----  1 root tty       4,  44 авг  1 12:16 tty44
+crw--w----  1 root tty       4,  45 авг  1 12:16 tty45
+crw--w----  1 root tty       4,  46 авг  1 12:16 tty46
+crw--w----  1 root tty       4,  47 авг  1 12:16 tty47
+crw--w----  1 root tty       4,  48 авг  1 12:16 tty48
+crw--w----  1 root tty       4,  49 авг  1 12:16 tty49
+crw--w----  1 root tty       4,   5 авг  1 12:16 tty5
+crw--w----  1 root tty       4,  50 авг  1 12:16 tty50
+crw--w----  1 root tty       4,  51 авг  1 12:16 tty51
+crw--w----  1 root tty       4,  52 авг  1 12:16 tty52
+crw--w----  1 root tty       4,  53 авг  1 12:16 tty53
+crw--w----  1 root tty       4,  54 авг  1 12:16 tty54
+crw--w----  1 root tty       4,  55 авг  1 12:16 tty55
+crw--w----  1 root tty       4,  56 авг  1 12:16 tty56
+crw--w----  1 root tty       4,  57 авг  1 12:16 tty57
+crw--w----  1 root tty       4,  58 авг  1 12:16 tty58
+crw--w----  1 root tty       4,  59 авг  1 12:16 tty59
+crw--w----  1 root tty       4,   6 авг  1 12:16 tty6
+crw--w----  1 root tty       4,  60 авг  1 12:16 tty60
+crw--w----  1 root tty       4,  61 авг  1 12:16 tty61
+crw--w----  1 root tty       4,  62 авг  1 12:16 tty62
+crw--w----  1 root tty       4,  63 авг  1 12:16 tty63
+crw--w----  1 root tty       4,   7 авг  1 12:16 tty7
+crw--w----  1 root tty       4,   8 авг  1 12:16 tty8
+crw--w----  1 root tty       4,   9 авг  1 12:16 tty9
+crw-------  1 root root      5,   3 авг  1 12:16 ttyprintk
+crw-rw----  1 root dialout   4,  64 авг  1 12:16 ttyS0
+crw-rw----  1 root dialout   4,  65 авг  1 12:16 ttyS1
+crw-rw----  1 root dialout   4,  74 авг  1 12:16 ttyS10
+crw-rw----  1 root dialout   4,  75 авг  1 12:16 ttyS11
+crw-rw----  1 root dialout   4,  76 авг  1 12:16 ttyS12
+crw-rw----  1 root dialout   4,  77 авг  1 12:16 ttyS13
+crw-rw----  1 root dialout   4,  78 авг  1 12:16 ttyS14
+crw-rw----  1 root dialout   4,  79 авг  1 12:16 ttyS15
+crw-rw----  1 root dialout   4,  80 авг  1 12:16 ttyS16
+crw-rw----  1 root dialout   4,  81 авг  1 12:16 ttyS17
+crw-rw----  1 root dialout   4,  82 авг  1 12:16 ttyS18
+crw-rw----  1 root dialout   4,  83 авг  1 12:16 ttyS19
+crw-rw----  1 root dialout   4,  66 авг  1 12:16 ttyS2
+crw-rw----  1 root dialout   4,  84 авг  1 12:16 ttyS20
+crw-rw----  1 root dialout   4,  85 авг  1 12:16 ttyS21
+crw-rw----  1 root dialout   4,  86 авг  1 12:16 ttyS22
+crw-rw----  1 root dialout   4,  87 авг  1 12:16 ttyS23
+crw-rw----  1 root dialout   4,  88 авг  1 12:16 ttyS24
+crw-rw----  1 root dialout   4,  89 авг  1 12:16 ttyS25
+crw-rw----  1 root dialout   4,  90 авг  1 12:16 ttyS26
+crw-rw----  1 root dialout   4,  91 авг  1 12:16 ttyS27
+crw-rw----  1 root dialout   4,  92 авг  1 12:16 ttyS28
+crw-rw----  1 root dialout   4,  93 авг  1 12:16 ttyS29
+crw-rw----  1 root dialout   4,  67 авг  1 12:16 ttyS3
+crw-rw----  1 root dialout   4,  94 авг  1 12:16 ttyS30
+crw-rw----  1 root dialout   4,  95 авг  1 12:16 ttyS31
+crw-rw----  1 root dialout   4,  68 авг  1 12:16 ttyS4
+crw-rw----  1 root dialout   4,  69 авг  1 12:16 ttyS5
+crw-rw----  1 root dialout   4,  70 авг  1 12:16 ttyS6
+crw-rw----  1 root dialout   4,  71 авг  1 12:16 ttyS7
+crw-rw----  1 root dialout   4,  72 авг  1 12:16 ttyS8
+crw-rw----  1 root dialout   4,  73 авг  1 12:16 ttyS9
+crw-rw----  1 root kvm      10, 124 авг  1 12:16 udmabuf
+crw-------  1 root root     10, 239 авг  1 12:16 uhid
+crw-------  1 root root     10, 223 авг  1 12:16 uinput
+crw-rw-rw-  1 root root      1,   9 авг  1 12:16 urandom
+crw-------  1 root root     10, 126 авг  1 12:16 userfaultfd
+crw-------  1 root root     10, 240 авг  1 12:16 userio
+crw-rw----  1 root root     10, 122 авг  1 12:16 vboxguest
+crw-rw-rw-  1 root root     10, 121 авг  1 12:16 vboxuser
+crw-rw----  1 root tty       7,   0 авг  1 12:16 vcs
+crw-rw----  1 root tty       7,   1 авг  1 12:16 vcs1
+crw-rw----  1 root tty       7,   2 авг  1 12:16 vcs2
+crw-rw----  1 root tty       7,   3 авг  1 12:16 vcs3
+crw-rw----  1 root tty       7,   4 авг  1 12:16 vcs4
+crw-rw----  1 root tty       7,   5 авг  1 12:16 vcs5
+crw-rw----  1 root tty       7,   6 авг  1 12:16 vcs6
+crw-rw----  1 root tty       7, 128 авг  1 12:16 vcsa
+crw-rw----  1 root tty       7, 129 авг  1 12:16 vcsa1
+crw-rw----  1 root tty       7, 130 авг  1 12:16 vcsa2
+crw-rw----  1 root tty       7, 131 авг  1 12:16 vcsa3
+crw-rw----  1 root tty       7, 132 авг  1 12:16 vcsa4
+crw-rw----  1 root tty       7, 133 авг  1 12:16 vcsa5
+crw-rw----  1 root tty       7, 134 авг  1 12:16 vcsa6
+crw-rw----  1 root tty       7,  64 авг  1 12:16 vcsu
+crw-rw----  1 root tty       7,  65 авг  1 12:16 vcsu1
+crw-rw----  1 root tty       7,  66 авг  1 12:16 vcsu2
+crw-rw----  1 root tty       7,  67 авг  1 12:16 vcsu3
+crw-rw----  1 root tty       7,  68 авг  1 12:16 vcsu4
+crw-rw----  1 root tty       7,  69 авг  1 12:16 vcsu5
+crw-rw----  1 root tty       7,  70 авг  1 12:16 vcsu6
+drwxr-xr-x  2 root root          60 авг  1 12:16 vfio
+crw-------  1 root root     10, 127 авг  1 12:16 vga_arbiter
+crw-------  1 root root     10, 137 авг  1 12:16 vhci
+crw-rw----  1 root kvm      10, 238 авг  1 12:16 vhost-net
+crw-rw----  1 root kvm      10, 241 авг  1 12:16 vhost-vsock
+crw-rw-rw-  1 root root      1,   5 авг  1 12:16 zero
+crw-------  1 root root     10, 249 авг  1 12:16 zfs
+max@ws01:~$ 
