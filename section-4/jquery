@@ -1,0 +1,8 @@
+max@ws01:~/linux-vm/4$ apt search highlight |grep jquery
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+libjs-jquery-datetimepicker/jammy,jammy 2.5.20+ds-1 all
+libjs-jquery-jush/jammy,jammy 12-3 all
+
+
+max@ws01:~/linux-vm/4$ sudo apt install libjs-jquery-jush

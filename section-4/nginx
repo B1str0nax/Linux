@@ -1,0 +1,21 @@
+max@ws01:~/linux-vm/4$ sudo apt install nginx
+
+max@ws01:~/linux-vm/4$ service nginx status 
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2024-08-05 13:07:31 +10; 1min 1s ago
+       Docs: man:nginx(8)
+    Process: 99130 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 99131 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+   Main PID: 99234 (nginx)
+      Tasks: 5 (limit: 9429)
+     Memory: 5.5M
+        CPU: 107ms
+     CGroup: /system.slice/nginx.service
+             ├─99234 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
+             ├─99238 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+             ├─99239 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+             ├─99240 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+             └─99241 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+max@ws01:~/linux-vm/4$ ^C
+max@ws01:~/linux-vm/4$ 

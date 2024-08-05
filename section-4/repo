@@ -1,0 +1,14 @@
+max@ws01:~$ sudo add-apt-repository --remove deb http://security.ubuntu.com/ubuntu jammy-security universe
+Репозиторий: 'deb http://security.ubuntu.com/ubuntu jammy-security universe'
+Описание:
+Archive for codename: jammy-security components: universe
+Дополнительные сведения: http://security.ubuntu.com/ubuntu
+Удаление репозитория.
+Нажмите [ENTER] для продолжения или Ctrl-C для отмены.
+Disabling deb entry in /etc/apt/sources.list.d/archive_uri-http_security_ubuntu_com_ubuntu-jammy.list
+Сущ:1 http://us.archive.ubuntu.com/ubuntu jammy InRelease                                                
+Сущ:2 http://security.ubuntu.com/ubuntu jammy-security InRelease                                         
+Сущ:3 http://us.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Сущ:4 http://us.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Чтение списков пакетов… Готово            
+max@ws01:~$ 
